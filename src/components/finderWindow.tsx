@@ -1,5 +1,10 @@
-import React, { useState } from 'react'
-
+import React, { useState, useEffect } from 'react'
+import { v4 as uuid } from 'uuid'
+import Row from 'react-bootstrap/Row'
+import FolderContents from '../components/finderFolderContents'
+import lodash from 'lodash'
+import deepdash from 'deepdash-es'
+const _ = deepdash(lodash)
 
 function FinderWindow() {
   const [folders, setFolders] = useState(null)
