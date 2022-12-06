@@ -10,12 +10,12 @@ interface ContentsTypes {
   active: string[] | null
 }
 
-function FolderContents() {
+function FolderContents({ items, allFolders, onRemove, onAdd, active, setActive }: ContentsTypes) {
   return (
     <div className="folder-column">
          <ul>
             {items.map((item: any) => (
-              <Folder />
+              <Folder key={item.id} item={item} allFolders={allFolders} onRemove={onRemove} onAdd={onAdd} active={active} setActive={setActive}/>
             ))}
         </ul>
       </div>
