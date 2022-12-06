@@ -1,11 +1,21 @@
 import React from 'react'
+import FolderContents from '../components/finderFolderContents'
+
+
 
 
 function Folder() {
+
+
+  const isCurrent = () => {
+
+  }
+
   return (
-    <div>
-    </div>
+    <li>
+    </li>
   )
 }
 
 export default Folder
+

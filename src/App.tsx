@@ -10,7 +10,7 @@ function App() {
       </header>
       <FinderWindow />
     </div>
-  )
+  );
 }
 
 export default App
