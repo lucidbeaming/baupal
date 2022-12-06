@@ -15,7 +15,6 @@ interface FolderPropTypes {
   active: string[] | null
 }
 
-
 function Folder({ item, allFolders, onRemove, onAdd, active, setActive }: FolderPropTypes) {
 
   const activate = (event: any) => {

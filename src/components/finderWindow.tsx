@@ -31,10 +31,6 @@ function FinderWindow() {
   const [folders, setFolders] = useState(initialValues)
   const [activeFolder, setActiveFolder] = useState(null)
 
-  useEffect(() => {
-    console.log(activeFolder)
-  }, [activeFolder])
-
   function removeItem(obj: any, id: string) {
     let collection = _.cloneDeep(obj)
     _.eachDeep(collection, (value, key, parentObj, ctx) => {
