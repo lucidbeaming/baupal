@@ -6,6 +6,15 @@ import lodash from 'lodash'
 import deepdash from 'deepdash-es'
 const _ = deepdash(lodash)
 
+interface FolderPropTypes {
+  item: any
+  allFolders: any
+  onRemove: Function
+  onAdd: Function
+  setActive: Function
+  active: string[] | null
+}
+
 function Folder() {
 
 

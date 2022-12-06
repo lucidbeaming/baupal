@@ -6,6 +6,27 @@ import lodash from 'lodash'
 import deepdash from 'deepdash-es'
 const _ = deepdash(lodash)
 
+const initialValues = [{
+    id: uuid(),
+    name: "folder",
+    children: [],
+  },
+  {
+    id: uuid(),
+    name: "folder",
+    children: [],
+  },
+  {
+    id: uuid(),
+    name: "folder",
+    children: [{
+      id: uuid(),
+      name: "folder",
+      children: [],
+    }],
+  },
+]
+
 function FinderWindow() {
   const [folders, setFolders] = useState(null)
 
