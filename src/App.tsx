@@ -1,4 +1,5 @@
 import React from 'react'
+import FinderWindow from './components/finderWindow'
 import './App.css'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
       <header className="App-header">
         <h1>baupal</h1>
       </header>
+      <FinderWindow />
     </div>
   )
 }
